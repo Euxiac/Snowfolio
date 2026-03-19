@@ -1,11 +1,9 @@
-import { useState } from 'react'
 import './App.css'
 import { Box, Typography, Stack } from '@mui/material'
 import CustomAppBar from './components/CustomAppbar'
 import CustomFooter from './components/CustomFooter'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <Box sx={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
