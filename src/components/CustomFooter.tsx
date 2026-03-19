@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Alert, BottomNavigation, Box, Button, Collapse, Slide } from "@mui/material";
+import { Alert, BottomNavigation, Box, Button, Slide } from "@mui/material";
 
 export default function CustomFooter() {
 const [open, setOpen] = React.useState(true);

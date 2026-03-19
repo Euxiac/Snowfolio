@@ -1,9 +1,6 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 import './App.css'
-import { Alert, Box, Breadcrumbs, Link, Typography, AppBar, Container, Stack, Button, BottomNavigation } from '@mui/material'
+import { Box, Typography, Stack } from '@mui/material'
 import CustomAppBar from './components/CustomAppbar'
 import CustomFooter from './components/CustomFooter'
 
