@@ -13,7 +13,8 @@ return(
             boxShadow: 0,
             bgcolor: 'transparent',
             display: 'flex',
-            padding:'12px'
+            padding:'12px',
+            height:'inherit',
     }}
     >
         <Box sx={{position:'absolute', right:'0', zIndex:'-1', paddingRight:'16px'}}><img src={'../public/Duck.png'} alt="Duck" height="120" width="100"/></Box>

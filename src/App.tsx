@@ -1,41 +1,31 @@
-import './App.css'
-import { Box, Typography, Stack } from '@mui/material'
+import { Box, Typography, Divider, Button } from '@mui/material'
 import CustomAppBar from './components/CustomAppbar'
 import CustomFooter from './components/CustomFooter'
+import TestComponents from './components/Testcomponent'
 
 function App() {
 
   return (
-    <Box sx={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
-      <CustomAppBar/>
-      <section id="PageContent">
-        <Box sx={{ flexGrow: 1, pt:16, pd:8}}>
-          <Stack spacing={4} sx={{height:'100%'}}>
-            <Typography variant="h1" gutterBottom>
-              Snowfolio
-            </Typography>
-            <Typography>A home for Snow's projects</Typography>
-            <Typography variant="h1" gutterBottom>
-              Snowfolio
-            </Typography>
-            <Typography variant="h1" gutterBottom>
-              Snowfolio
-            </Typography>
-            <Typography variant="h1" gutterBottom>
-              Snowfolio
-            </Typography>
-            <Typography variant="h1" gutterBottom>
-              Snowfolio
-            </Typography>
-            <Typography variant="h1" gutterBottom>
-              Snowfolio
-            </Typography>
-          </Stack>
-        </Box>
-      </section>
-      
-      <CustomFooter/>
+    <>
+    <CustomAppBar/>
+      <Box sx={{ display:'flex', paddingTop:16, vw:100, flexDirection:'column', alignItems:'center' }}>
+          <Typography variant="h1" gutterBottom>
+            Snowfolio
+          </Typography>
+          <Typography variant="body1" sx={{ mb: 3 }}>
+            A home for Snow's projects
+          </Typography>
+
+          <Button variant="contained" color="primary">
+            View Projects
+          </Button>
+
+          <Divider orientation="horizontal" flexItem sx={{paddingTop:'24px', paddingBottom:'24px'}} />
+
+          <TestComponents/>
     </Box>
+    <CustomFooter/>
+    </>
   )
 }
 

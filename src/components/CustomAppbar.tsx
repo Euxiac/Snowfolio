@@ -7,7 +7,6 @@ return(
     <>
     <AppBar
       position="fixed"
-      enableColorOnDark
       sx={{
         boxShadow: 0,
         bgcolor: 'transparent',
